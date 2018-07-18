@@ -4,6 +4,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    @last_transaction_value = 0
   end 
    def apply_discount
     if @discount != 0
@@ -39,6 +40,7 @@ class CashRegister
   end
   
   def void_last_transaction
+    
   end 
 
 end
